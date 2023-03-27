@@ -1,0 +1,47 @@
+nav {
+  display: flex;
+  gap: 5.5rem;
+  align-items: center;
+}
+
+.logo {
+  max-width: 14rem;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  gap: 3rem;
+}
+
+.navbar__item {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar__item a {
+  text-decoration: none;
+  color: var(--Dark-grayish-blue);
+}
+
+.navbar__item:hover {
+  color: var(--Black);
+}
+
+.navbar__item::before {
+  content: "";
+  position: absolute;
+  top: 6.4rem;
+  height: 0.4rem;
+  width: 0%;
+  background-color: var(--Orange);
+  cursor: auto;
+}
+
+.navbar__item:hover::before {
+  width: 100%;
+  transition: width 0.3s;
+}
