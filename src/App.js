@@ -3,13 +3,13 @@ import { useState, useEffect } from "react"
 import Navbar from "./Components/Navbar"
 import NavAccount from "./Components/NavAccount"
 import ProductImg from "./Components/ProductImg"
-import ProductDescription from "./Components/ProductDescription.js"
+import ProductDescription from "./Components/ProductDescription.jsx"
 import getData from "./data"
 
 import "./Style/Ecommerce.css"
 
 function Ecommerce() {
-  const [cart, setCart] = useState(0)
+  const [cart] = useState(0)
   const [data, setData] = useState(getData())
 
   useEffect(() => {
